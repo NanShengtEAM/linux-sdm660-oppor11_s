@@ -528,5 +528,23 @@ config USB_RAW_GADGET
 
 	  Say "y" to link the driver statically, or "m" to build a
 	  dynamically linked module called "raw_gadget".
+config USB_G_AUTO_RNDIS
+	tristate "Auto RNDIS Gadget"
+	depends on USB_GADGET
+	select USB_LIBCOMPOSITE
+	select USB_U_ETHER
+	select USB_F_RNDIS
+	help
+	  This gadget driver implements a RNDIS (Remote Network Driver Interface
+	  Specification) Ethernet-over-USB connection. It automatically waits for
+	  the UDC (USB Device Controller) to register and creates a network
+	  interface (usb0) upon USB connection, allowing the host and device to
+	  communicate via SSH and other network protocols.
 
+	  The driver is designed as a composite gadget and uses the RNDIS
+	  function. It supports OTG descriptor generation if the hardware
+	  supports it.
+
+	  Say "y" to link the driver statically into the kernel, or "m" to
+	  build it as a module named "g_auto_rndis.ko".(Proudly written with AI)
 endmenu

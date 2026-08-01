@@ -279,6 +279,7 @@ dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-xiaomi-clover-plus.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-xiaomi-jasmine.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-xiaomi-jason.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-oppo-r11t.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-oppo-r11s.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-xiaomi-lavender-shenchao.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-xiaomi-lavender-tianma.dtb
 dtb-$(CONFIG_ARCH_QCOM)	+= sdm660-xiaomi-lavender-boe.dtb

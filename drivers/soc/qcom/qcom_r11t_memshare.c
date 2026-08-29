@@ -483,6 +483,7 @@ static void r11t_memshare_remove(struct platform_device *pdev)
 
 static const struct of_device_id r11t_memshare_of_match[] = {
 	{ .compatible = "oppo,r11t-memshare" },
+	{ .compatible = "oppo,r11s-memshare" },
 	{}
 };
 MODULE_DEVICE_TABLE(of, r11t_memshare_of_match);
@@ -497,5 +498,5 @@ static struct platform_driver r11t_memshare_driver = {
 };
 module_platform_driver(r11t_memshare_driver);
 
-MODULE_DESCRIPTION("OPPO R11T Qualcomm modem memory share service");
+MODULE_DESCRIPTION("OPPO R11T/R11s Qualcomm modem memory share service");
 MODULE_LICENSE("GPL");

@@ -708,4 +708,5 @@ enum qcom_smgr_sensor_type sns_smgr_sensor_type_from_str(const char *str)
 }
 EXPORT_SYMBOL_GPL(sns_smgr_sensor_type_from_str);
 
+MODULE_DESCRIPTION("Qualcomm Sensor Manager QMI helpers");
 MODULE_LICENSE("GPL");
